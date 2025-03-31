@@ -1,0 +1,184 @@
+/* Reset beberapa style default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header dan Navigasi */
+header {
+    background-color: #3d3202;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f28d1f;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to right, #92790b, #c29e28);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.banner .btn-cta {
+    background-color: #f28d1f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.banner .btn-cta:hover {
+    background-color: #e77f00;
+}
+
+/* Section */
+.section-padding {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout untuk layanan */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsivitas Gambar dan Video */
+.responsive-img, .responsive-video {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Formulir */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
