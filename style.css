@@ -121,7 +121,7 @@ p {
 
 /* Responsivitas Gambar dan Video */
 .responsive-img, .responsive-video {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin: 20px 0;
